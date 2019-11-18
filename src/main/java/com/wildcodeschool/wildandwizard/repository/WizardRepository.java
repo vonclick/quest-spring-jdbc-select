@@ -62,6 +62,7 @@ public class WizardRepository {
                 String biography = resultSet.getString("biography");
                 boolean muggle = resultSet.getBoolean("is_muggle");
                 return new Wizard(id, firstName, lastName, birthday, birthPlace, biography, muggle);
+                         
             }
         } catch (SQLException e) {
             e.printStackTrace();
